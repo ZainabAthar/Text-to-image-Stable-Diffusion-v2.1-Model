@@ -14,7 +14,7 @@ export async function POST(request) {
 
 		const headers = {
 			'Content-Type': 'application/json',
-			Authorization: 'Bearer AIzaSyD6-saBs2rGM5qXBk0o_9hMfknUEYOV3JI',
+			Authorization: 'Bearer ******************************************',
 		};
 
 		const payload = {
