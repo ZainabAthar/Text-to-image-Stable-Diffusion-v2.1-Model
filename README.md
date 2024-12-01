@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Stable Diffusion on Vertex AI
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This repository demonstrates the deployment of a **Stable Diffusion model** on **Google Cloud Vertex AI** to generate high-quality images from textual descriptions. The workflow involves model deployment, text-to-image inference, and visualization of results.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The diagram below provides a high-level overview of the process:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![Flowdiagram](https://github.com/user-attachments/assets/56a60f1b-918a-4bca-abb8-157b30b27005)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Model Deployment**: Seamlessly deploy the Stable Diffusion model on Vertex AI.
+- **Text-to-Image Generation**: Generate realistic images from textual prompts.
+- **Scalable Architecture**: Leverage the power of Vertex AI for scalable and efficient inference.
+- **Workflow Automation**: Includes a streamlined pipeline for text input to image output.
 
-## Learn More
+## Setup and Deployment
 
-To learn more about Next.js, take a look at the following resources:
+### Prerequisites
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. A Google Cloud account with Vertex AI enabled.
+2. Properly configured `gcloud` CLI.
+3. A Python environment with the necessary dependencies installed.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Workflow
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Input**: User provides a textual description.
+- **Processing**: The deployed Stable Diffusion model on Vertex AI processes the input and generates an image.
+- **Output**: The generated image is returned and saved for further use.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
